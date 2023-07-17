@@ -53,6 +53,9 @@ const express = require('express');
 const redis = require('redis'); 
 
 
+const process = require('process');
+
+
 //# Express 웹 서버 구축 프레임워크를 사용하기 위한 설정
 //- 'Express 앱 객체'를 생성하고 초기화함.
 //  이 객체는 모든 Express 기능을 포함하여 서버를 시작하고 요청 라우팅을 처리함.
@@ -151,6 +154,10 @@ client.set('visits', 0); //초기화
 //- 'Express.js에서의 app.get('/')'은 '스프링에서의 @GetMapping('/')'과 같은 역할, 기능임.
 //- 루트 라우트('/')에 대한 GET 요청을 처리함.
 app.get('/', (req, res) => { 
+
+
+    process.exit(41704170); //0만 아니라면 어떤 숫자든 입력해도 됨.
+
 
     //'Redis 서버'에 저장된 '키 visits'의 '값(value)'를 가져온다.
     //즉, Reids 서버로부터 visit 횟수를 가져와서, 페이지를 로드할 때마다 증가시킴.

@@ -34,6 +34,9 @@ services:
   # - docker-compose.yml 파일은 Dockerfile을 참조하여 node-app 서비스(컨테이너)를 빌드함.
   # - Dockerfile은 index.js 파일을 포함하는 도커 이미지를 빌드함.
   node-app:
+
+    restart: on-failure
+
     # 컨테이너 빌드 시의 베이스 이미지를 입력하는 것보다, 
     # 현재 Dockerfile의 디렉토리를 찾고, 그 안에 있는 도커 이미지를 사용해서 바로 빌드시킴. 
     build: .  

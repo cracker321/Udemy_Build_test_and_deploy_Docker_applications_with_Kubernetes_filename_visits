@@ -156,7 +156,7 @@ client.set('visits', 0); //초기화
 app.get('/', (req, res) => { 
 
 
-    process.exit(41704170); //0만 아니라면 어떤 숫자든 입력해도 됨.
+    process.exit(41704170); //0만 아니라면 어떤 숫자든 입력해도
 
 
     //'Redis 서버'에 저장된 '키 visits'의 '값(value)'를 가져온다.

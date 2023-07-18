@@ -1,0 +1,14 @@
+# package.json 파일
+
+{
+    "dependencies": {
+        // 'Express'를 사용하기 위해 Express 의존성을 추가해줌. 버전은 아무 버전 상관 없다는 의미인 '*'를 입력함.
+        "express": "*", 
+        // '인메모리 Redis'를 사용하기 위해 아래 의존성을 추가함.
+        "redis": "2.8.0"    
+    },
+
+    "script":{
+        "start": "node index.js"    
+    }
+}
